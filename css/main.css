@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+html {
+
+	/*Teal Colors*/
+	--color-teal-dark: #14CBA8;
+	--color-teal-light: #9EFFFF;
+	--color-teal-primary: #64FFDA;
+
+	/*Orange Colors*/
+	--color-orange-dark: #C41C00;
+	--color-orange-light: #FF8A50;
+	--color-orange-primary: #FF5722;
+
+	/*Blue Colors*/
+	--color-blue-dark: #022F6C;
+	--color-blue-light: #4F83CC;
+	--color-blue-primary: #01579B;
+
+	/*Text Colors*/
+	--color-text-primary: #022f63;
+	--color-text-light: #677385;
+	--color-text-dark: #14212F;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+html {
+	--font-primary: 'Work Sans', sans-serif;
+	--font-secondary: 'Montserrat', sans-serif;
+
+	color: var(--color-text-primary);
+	font-family: var(--font-primary);
+}
+
+a {
+	color: var(--color-text-primary);
+	text-decoration: none;
+}
+
+a:visited {
+	color: var(--color-blue-dark);
+}
+
+a:hover {
+	text-decoration: underline;
+	color: var(--color-teal-dark);
+}
+
+h1,h2,h3,h4,h5,h6,.logo, .secondary-font {
+	font-family: var(--font-secondary);
+}
+
+.logo {
+	font-size: 50px;
+	font-weight: bold;
+	color: var(--color-orange-light)
+}
+
+.lucid-styles {
+	font-size: 30px;
+}
+
+main {
+	margin:auto;
+	max-width: 78%;
+}
+
+main {
+	max-width: 
+}
+
+p {
+	line-height: 1.5rem; 
+}
+
+.primary-font {
+	font-family: var(--font-primary);
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+	padding: 2rem;
+}
+
+.home-nav li {
+	display: inline;
+	padding-right: 11px;
+	font-size: 20px;
+}
+
+/* ==========================================================================
+   Footer Component
+   ========================================================================== */
+
+footer {
+	background-color: var(--color-orange-light);
+	color: var(--color-text-dark);
+	padding: 2rem; 
+	text-align: center;	
+}
+
+.footer {
+	position: absolute;
+}
+
+ul {
+	list-style-type: circle;
+}
