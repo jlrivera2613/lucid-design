@@ -5,14 +5,14 @@
 html {
 
 	/*Teal Colors*/
-	--color-teal-dark: #006064;
-	--color-teal-light: #14CBA8;
-	--color-teal-primary: #009688;
+	--color-teal-dark: #14CBA8;
+	--color-teal-light: #9EFFFF;
+	--color-teal-primary: #64FFDA;
 
 	/*Orange Colors*/
-	--color-orange-dark: #D84315;
+	--color-orange-dark: #C41C00;
 	--color-orange-light: #FF8A50;
-	--color-orange-primary: #F44336;
+	--color-orange-primary: #FF5722;
 
 	/*Blue Colors*/
 	--color-blue-dark: #022F6C;
@@ -69,7 +69,7 @@ a {
 }
 
 a:visited {
-	color: var(--color-blue-primary);
+	color: var(--color-orange-primary);
 }
 
 a:hover {
@@ -86,10 +86,6 @@ a:active {
 a:focus {
 	border: solid 1px var(--color-teal-dark);
 	color: var(--color-text-primary);
-}
-
-footer a:hover {
-	color: white;
 }
 
 blockquote {
@@ -208,14 +204,12 @@ footer {
    Examples
    ========================================================================== */
 
- /*Typography Examples*/
-
 .secondary-font {
 	font-family: var(--font-secondary)
 }
 
 .secondary-text {
-   	font-family: var(--font-secondary);
+   		font-family: var(--font-secondary);
    }
 
 .example-heading {
@@ -231,246 +225,4 @@ footer {
 
 .tertiary-text{
 	font-size: var(--small-text);
-}
-
-/**********BUTTONS************/
-
-/*Hero Teal Buttons*/
-
-.hero-button-teal, .hero-button-teal:visited {
-	background-color: transparent;
-	border-radius: .3rem;
-	border: solid .2rem;
-	color: var(--color-teal-light);
-	font-weight: bolder;
-	font-size: larger;
-	margin-right: 1.25rem;
-	padding: 1rem 2.6rem;
-	text-decoration: none;
-}
-
-.hero-button-teal:hover, .hero-button-teal:focus {
-	background-color: var(--color-teal-light);
-	border-radius: .5rem; 
-	color: white;
-	font-weight: bold;
-	margin-right: 1.25rem;
-	padding: 1rem 2.6rem;
-	text-decoration: none;
-  	transform-style: flat; 
-}
-
-
-.hero-button: active {
-
-}
-
-/*HERO BUTTONS*/
-
-/*Hero Orange Button*/
-
-.hero-button-orange, .hero-button-orange:visited {
-	background-color: transparent;
-	border-radius: .3rem;
-	border: solid .2rem;
-	color: var(--color-orange-primary);
-	font-weight: bolder;
-	font-size: larger;
-	margin-right: 1.25rem;
-	padding: 1rem 2.6rem;
-	text-decoration: none;
-}
-
-.hero-button-orange:hover, .hero-button-orange:focus {
-	background-color: var(--color-orange-primary);
-	border-radius: .5rem; 
-	color: white;
-	font-weight: bold;
-	margin-right: 1.25rem;
-	padding: 1rem 2.6rem;
-	text-decoration: none;
-	transition: ;
-}
-
-/*Hero Blue Button*/
-.hero-button-blue, .hero-button-blue:visited {
-	background-color: transparent;
-	border-radius: .3rem;
-	border: solid .2rem;
-	color: var(--color-blue-primary);
-	font-weight: bolder;
-	font-size: larger;
-	margin-right: 1.25rem;
-	padding: 1rem 2.6rem;
-	text-decoration: none;
-}
-
-.hero-button-blue:hover, .hero-button-blue:focus {
-	background-color: var(--color-blue-primary);
-	border-radius: .5rem; 
-	color: white;
-	font-weight: bold;
-	margin-right: 1.25rem;
-	padding: 1rem 2.6rem;
-	text-decoration: none;
-}
-
-/*NORMAL BUTTONS*/
-
-/*Normal Teal Button*/
-
-.normal-button-teal, .normal-button-teal:visited {
-	background-color: var(--color-teal-primary);
-	border-radius: .5rem;
-	border: solid .2rem;
-	color: white;
-	font-weight: bolder;
-	margin-right: 1.25rem;
-	padding: .8rem 2rem;
-	text-decoration: none;
-}
-
-.normal-button-teal:hover, .normal-button-teal:focus {
-	background-color: var(--color-teal-light);
-	border-radius: .5rem; 
-	color: white;
-	font-weight: bold;
-	margin-right: 1.25rem;
-	padding: .9rem 2.1rem;
-	text-decoration: none;
-  	transform-style: flat; 
-}
-
-
-.normal-button: active {
-
-}
-
-/*Normal Orange Button*/
-
-.normal-button-orange, .normal-button-orange:visited {
-	background-color: var(--color-orange-primary);
-	border-radius: .5rem;
-	border: solid .2rem;
-	color: white;
-	font-weight: bolder;
-	margin-right: 1.25rem;
-	padding: .8rem 2rem;
-	text-decoration: none;
-}
-
-.normal-button-orange:hover, .normal-button-orange:focus {
-	background-color: var(--color-orange-light);
-	border-radius: .5rem; 
-	color: white;
-	font-weight: bold;
-	margin-right: 1.25rem;
-	padding: .9rem 2.1rem;
-	text-decoration: none;
-	transition: ;
-}
-
-/*Normal Blue Button*/
-.normal-button-blue, .normal-button-blue:visited {
-	background-color: var(--color-blue-primary);
-	border-radius: .5rem;
-	border: solid .2rem;
-	color: white;
-	font-weight: bolder;
-	margin-right: 1.25rem;
-	padding: .8rem 2rem;
-	text-decoration: none;
-}
-
-.normal-button-blue:hover, .normal-button-blue:focus {
-	background-color: var(--color-blue-light);
-	border-radius: .5rem; 
-	color: white;
-	font-weight: bold;
-	margin-right: 1.25rem;
-	padding: .9rem 2.1rem;
-	text-decoration: none;
-}
-
-/*SMALL BUTTONS*/
-
-/*Small Teal Button*/
-
-.tertiary-button-teal, .tertiary-button-teal:visited {
-	background-color: var(--color-teal-dark);
-	border-radius: .5rem;
-	border: solid .2rem;
-	color: white;
-	font-weight: bolder;
-	margin-right: 1.25rem;
-	padding: .8rem 2rem;
-	text-decoration: none;
-}
-
-.tertiary-button-teal:hover, .tertiary-button-teal:focus {
-	background-color: var(--color-teal-dark);
-	border-radius: .5rem; 
-	color: white;
-	font-weight: bold;
-	margin-right: 1.25rem;
-	padding: .9rem 2.1rem;
-	text-decoration: none;
-  	transform-style: flat; 
-}
-
-
-.normal-button: active {
-
-}
-
-/*Small Orange Button*/
-
-.tertiary-button-orange, .tertiary-button-orange:visited {
-	background-color: #BDBDBD;
-/*	border-radius: .5rem;*/
-	border: solid .2rem;
-	color: white;
-	font-weight: bolder;
-	margin-right: 1.25rem;
-	padding: .8rem 2rem;
-	text-decoration: none;
-}
-
-.tertiary-button-orange:hover, .tertiary-button-orange:focus {
-	background-color: var(--color-orange-dark);
-/*	border-radius: .5rem; */
-	color: var(--color-text-dark);
-	font-weight: bold;
-	margin-right: 1.25rem;
-	padding: .9rem 2.1rem;
-	text-decoration: none;
-	transition: ;
-}
-
-/*Small Blue Button*/
-.tertiary-button-blue, .tertiary-button-blue:visited {
-	background-color: var(--color-blue-dark);
-	border-radius: .5rem;
-	border: solid .2rem;
-	color: white;
-	font-weight: bolder;
-	margin-right: 1.25rem;
-	padding: .5rem 1.5rem;
-	text-decoration: none;
-}
-
-.tertiary-button-blue:hover, .tertiary-button-blue:focus {
-	background-color: white;
-	border-radius: .5rem; 
-	color: var(--color-blue-dark);
-	font-weight: bold;
-	margin-right: 1.25rem;
-	padding: .5rem 1.5rem;
-	text-decoration: none;
-}
-
-/*Margins for Buttons*/
-.button-margins {
-	margin-top: 4rem;
-	margin-bottom: 4rem;
 }
