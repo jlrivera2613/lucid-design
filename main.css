@@ -1,0 +1,636 @@
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+html {
+
+	/*Teal Colors*/
+	--color-teal-dark: #006064;
+	--color-teal-light: #14CBA8;
+	--color-teal-primary: #009688;
+
+	/*Orange Colors*/
+	--color-orange-dark: #D84315;
+	--color-orange-light: #FF8A50;
+	--color-orange-primary: #F44336;
+
+	/*Blue Colors*/
+	--color-blue-dark: #022F6C;
+	--color-blue-light: #4F83CC;
+	--color-blue-primary: #01579B;
+
+	/*Text Colors*/
+	--color-text-primary: #3C4858;
+	--color-text-light: #677385;
+	--color-text-dark: #14212F;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+html {
+	--font-primary: 'Work Sans', sans-serif;
+	--font-secondary: 'Montserrat', sans-serif;
+
+	/*Type Scale*/
+
+	--ratio: 1.15;
+	--bodytext: 1rem;
+
+	/*Large Text Sizes*/
+	--large-text: calc(var(--bodytext) * var(--ratio));
+	--xlarge-text: calc(var(--large-text) * var(--ratio));
+	--xxlarge-text: calc(var(--xlarge-text) * var(--ratio));
+	--xxxlarge-text: calc(var(--xxlarge-text) * var(--ratio));
+	--xxxxlarge-text: calc(var(--xxxlarge-text) * var(--ratio));
+	--xxxxxlarge-text: calc(var(--xxxxlarge-text) * var(--ratio));
+
+	/*Small Text Sizes*/
+	--small-text: calc(var(--bodytext) / var(--ratio));
+	--xsmall-text: calc(var(--small-text) / var(--ratio));
+    --xxsmall-text: calc(var(--xsmall-text) / var(--ratio));
+    --xxxsmall-text: calc(var(--xxsmall-text) / var(--ratio));
+    --xxxxsmall-text: calc(var(--xxxsmall-text) / var(--ratio));
+    --xxxxxsmall-text: calc(var(--xxxxsmall-text) / var(--ratio));
+
+    /*Margins*/
+    --margin-standard: 0 0 1rem;
+
+    /*Text Color, Font, & Size*/
+	color: var(--color-text-primary);
+	font-family: var(--font-primary);
+	font-size: var(--bodytext);
+	line-height: 1.5;
+}
+
+a {
+	color: var(--color-teal-primary);
+	text-decoration: underline;
+}
+
+a:visited {
+	color: var(--color-teal-primary);
+}
+
+a:hover {
+	color: var(--color-blue-primary);
+	text-decoration: underline;
+}
+
+a:active {
+	color: var(--color-orange-primary);
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+a:focus {
+	border: solid .063rem var(--color-teal-dark);
+	color: var(--color-text-primary);
+}
+
+blockquote {
+	border-left: 5px solid var(--color-teal-light);
+	display: block;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+	padding: .94px 2.5rem;
+}
+
+h1, h2, h3, h4, h5, h6,.logo {
+	font-family: var(--font-secondary);
+}
+
+h1 {
+	font-size: var(--xxxxxlarge-text);
+}
+
+h2 {
+	font-size: var(--xxxxlarge-text);
+}
+
+h3 {
+	font-size: var(--xxxlarge-text);
+}
+
+h4 {
+	font-size: var(--xxlarge-text);
+}
+
+h5 {
+	font-size: var(--xlarge-text);
+}
+
+h6 {
+	font-size: var(--large-text);
+}
+
+.logo {
+	color: var(--color-orange-light);
+	font-size: 3.13rem;
+	font-weight: bold;
+}
+
+.lucid-styles {
+	font-size: 1.88rem;
+}
+
+p {
+	margin: var(--margin-standard); 
+}
+
+.primary-font {
+	font-family: var(--font-primary);
+}
+
+ol{
+	list-style-type: square;
+}
+
+ul {
+	list-style-type: square;
+}
+
+.featured-text {
+	font-size: var(--bodytext);
+	font-style: italic;
+}
+
+.tertiary-text{
+	font-size: var(--small-text);
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+	padding: 2rem;
+}
+
+.home-nav li {
+	display: inline;
+	padding-right: .69rem;
+	font-size: 1.25rem;
+}
+
+.home-nav a {
+	text-decoration: none; 
+}
+
+/* ==========================================================================
+   Master Layout
+   ========================================================================== */
+main {
+	margin:auto;
+	max-width: 50rem;
+}
+
+body {
+	margin: 0;
+}
+
+/*Margins*/
+
+.button-margins {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+} 
+
+/* ==========================================================================
+   Footer Component
+   ========================================================================== */
+
+footer {
+	background-color: var(--color-orange-light);
+	margin-top: 10rem;
+	padding: 2rem; 
+	text-align: center;	
+}
+
+.footer-nav li {
+	display: inline;
+	padding-right: .69rem;
+	font-size: 1.25rem;
+	text-decoration: none; 
+}
+
+.footer-nav li a {
+	color: var(--color-teal-dark);
+}
+
+footer nav a {
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: var(--color-teal-light);
+	text-decoration: none;
+}
+
+footer p {
+	color: var(--color-text-primary);
+}
+ /*==========================================================================
+   Examples
+   ========================================================================== */
+
+ /*Typography Examples*/
+
+.secondary-font {
+	font-family: var(--font-secondary)
+}
+
+.secondary-text {
+   	font-family: var(--font-secondary);
+   }
+
+.example-heading {
+   	border-bottom:.063rem solid lightgrey;
+   	padding-bottom: 1rem;
+   	margin: 0;
+   }
+
+/*Hero Teal Button*/
+
+.hero-button-teal, .hero-button-teal:visited {
+	background-color: transparent;
+	border-radius: .3rem;
+	border: solid .2rem;
+	color: var(--color-teal-light);
+	font-weight: bolder;
+	font-size: larger;
+	margin-right: 1.25rem;
+	padding: 1rem 2.6rem;
+	text-decoration: none;
+}
+
+.hero-button-teal:hover, .hero-button-teal:focus {
+	background-color: var(--color-teal-light);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	margin-right: 1.25rem;
+	padding: 1rem 2.6rem;
+	text-decoration: none;
+	transition: linear .4s;
+}
+
+.hero-button-teal:active {
+	border: 3px dotted white;
+}
+
+/*Hero Orange Button*/
+
+.hero-button-orange, .hero-button-orange:visited {
+	background-color: transparent;
+	border-radius: .3rem;
+	border: solid .2rem;
+	color: var(--color-orange-primary);
+	font-weight: normal;
+	font-size: larger;
+	margin-right: 1.25rem;
+	padding: 1rem 2.6rem;
+	text-decoration: none;
+}
+
+.hero-button-orange:hover, .hero-button-orange:focus {
+	background-color: var(--color-orange-primary);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	margin-right: 1.25rem;
+	padding: 1rem 2.6rem;
+	text-decoration: none;
+	transition: linear .4s;
+}
+
+.hero-button-orange:active {
+	border: 3px dotted white;
+}
+
+/*Hero Blue Button*/
+.hero-button-blue, .hero-button-blue:visited {
+	background-color: transparent;
+	border-radius: .3rem;
+	border: solid .2rem;
+	color: var(--color-blue-primary);
+	font-weight: normal;
+	font-size: larger;
+	margin-right: 1.25rem;
+	padding: 1rem 2.6rem;
+	text-decoration: none;
+}
+
+.hero-button-blue:hover, .hero-button-blue:focus {
+	background-color: var(--color-blue-primary);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	margin-right: 1.25rem;
+	padding: 1rem 2.6rem;
+	text-decoration: none;
+	transition: linear .4s;
+}
+
+.hero-button-blue:active {
+	border: 3px dotted white;
+}
+
+
+/*Normal Teal Button*/
+
+.normal-button-teal, .normal-button-teal:visited {
+	background-color: var(--color-teal-primary);
+	border-radius: .5rem;
+	border: solid .2rem;
+	color: white;
+	font-weight: normal;
+	margin-right: 1.25rem;
+	padding: .8rem 2rem;
+	text-decoration: none;
+}
+
+.normal-button-teal:hover, .normal-button-teal:focus {
+	background-color: var(--color-teal-light);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	margin-right: 1.25rem;
+	padding: .8rem 2rem;
+	text-decoration: none;
+}
+
+
+.normal-button-teal:active {
+	border: 3px dotted white;
+}
+
+/*Normal Orange Button*/
+
+.normal-button-orange, .normal-button-orange:visited {
+	background-color: var(--color-orange-primary);
+	border-radius: .5rem;
+	border: solid .2rem;
+	color: white;
+	font-weight: normal;
+	margin-right: 1.25rem;
+	padding: .8rem 2rem;
+	text-decoration: none;
+}
+
+.normal-button-orange:hover, .normal-button-orange:focus {
+	background-color: var(--color-orange-light);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	margin-right: 1.25rem;
+	padding: .8rem 2rem;
+	text-decoration: none;
+}
+
+.normal-button-orange:active {
+	border: 3px dotted white;
+}
+
+/*Normal Blue Button*/
+.normal-button-blue, .normal-button-blue:visited {
+	background-color: var(--color-blue-primary);
+	border-radius: .5rem;
+	border: solid .2rem;
+	color: white;
+	font-weight: normal;
+	margin-right: 1.25rem;
+	padding: .8rem 2rem;
+	text-decoration: none;
+}
+
+.normal-button-blue:hover, .normal-button-blue:focus {
+	background-color: var(--color-blue-light);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	margin-right: 1.25rem;
+	padding: .8rem 2rem;
+	text-decoration: none;
+}
+
+.normal-button-blue:active {
+	border: 3px dotted white;
+}
+
+/*Small Teal Button*/
+
+.tertiary-button-teal, .tertiary-button-teal:visited {
+	background-color: var(--color-teal-dark);
+	border-radius: .5rem;
+	border: solid .2rem;
+	color: white;
+	font-weight: normal;
+	margin-right: 1.25rem;
+	padding: .5rem 1.5rem;
+	text-decoration: none;
+}
+
+.tertiary-button-teal:hover, .tertiary-button-teal:focus {
+	background-color: var(--color-teal-primary);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	margin-right: 1.25rem;
+	padding: .5rem 1.5rem;
+	text-decoration: none;
+}
+
+
+.tertiary-button-teal:active {
+	border: 3px dotted white;
+}
+
+/*Small Orange Button*/
+
+.tertiary-button-orange, .tertiary-button-orange:visited {
+	background-color: var(--color-orange-dark);
+	border-radius: .5rem;
+	border: solid .2rem;
+	color: white;
+	font-weight: normal;
+	margin-right: 1.25rem;
+	padding: .5rem 1.5rem;
+	text-decoration: none;
+}
+
+.tertiary-button-orange:hover, .tertiary-button-orange:focus {
+	background-color: var(--color-orange-primary);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	margin-right: 1.25rem;
+	padding: .5rem 1.5rem;
+	text-decoration: none;
+}
+
+.tertiary-button-orange:active {
+	border: 3px dotted white;
+}
+
+/*Small Blue Button*/
+.tertiary-button-blue, .tertiary-button-blue:visited {
+	background-color: var(--color-blue-dark);
+	border-radius: .5rem;
+	border: solid .2rem;
+	color: white;
+	font-weight: normal;
+	margin-right: 1.25rem;
+	padding: .5rem 1.5rem;
+	text-decoration: none;
+}
+
+.tertiary-button-blue:hover, .tertiary-button-blue:focus {
+	background-color: var(--color-blue-light);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	margin-right: 1.25rem;
+	padding: .5rem 1.5rem;
+	text-decoration: none;
+}
+
+.tertiary-button-blue:active {
+	border: 3px dotted white;
+}
+
+/*Accordion*/
+
+details {
+	background-color: white;
+	border: 1px solid darkgrey;
+	border-radius: .3rem;
+	max-width: 50rem;
+}
+
+details div {
+	background-color: white;
+	padding: 1.5rem;
+}
+
+summary:focus, details[open] summary {
+	background-color: var(--color-orange-light);
+	outline: none;
+}
+
+summary {
+	background-color: white;
+	padding: 1.5rem;
+}
+
+summary:visited {
+	background-color: var(--color-orange-light);
+}
+
+summary:hover {
+	color: white;
+	background-color: var(--color-teal-light);
+	font-weight: bold;	
+}
+
+summary:active {
+	box-shadow: 1rem 1rem;
+}
+
+/*Modal Dialog*/
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+dialog {
+	border-color: var(--color-teal-light);
+	border-width: .4rem;
+	border-radius: .5rem;
+	box-shadow: .25rem .25rem .25rem var(--color-blue-primary)
+}
+
+dialog::backdrop {
+	background-color: rgba( 192, 192, 192, .5 );
+}
+
+dialog[open] {
+	animation: fade-in 1.5s ease;
+}
+
+.modal-dialog {
+	max-width: 30%;
+	height: auto;
+}
+
+.modal-title {
+	text-align: center;
+}
+
+/*Form*/	
+
+input, textarea, select {
+	display: block;
+	font-size: var(--bodytext);
+	margin-bottom: 1rem;
+	min-width: 15rem;
+}
+xxxxlarge-textx
+textarea {
+	min-height: 10rem;
+	min-width: 26rem;
+}
+
+input[type="text"], textarea, select {
+	border-radius: .25rem;
+	border: 2px solid var(--color-orange-light);
+	padding: 1rem;
+}
+
+input:focus, textarea:focus, select:focus {
+	background-color: rgba(20, 203, 168, .3);
+	outline: double var(--color-orange-dark);
+}
+
+input[disabled], textarea[disabled], select[disabled] {
+	background-color: lightgrey;
+	color: var(--color-text-primary);
+}
+
+.error, {
+	border: 3px solid red;
+}
+
+.helper-text {
+	color: var(--color-text-light);
+	font-style: italic;
+	margin-top: 1rem;
+}
+
+.submit-form {
+	background-color: var(--color-orange-light);
+	border: none;
+	border-radius: .25rem;
+	color: white;
+	cursor: pointer;
+	font-family: var(--font-primary);
+	font-size: var(--bodytext);
+	padding:.5rem 1rem;
+}
+
+.submit-form:hover, .submit-form:focus {
+	background-color: var(--color-teal-light);
+	color: white;
+}
+
+.submit-form:active {
+	border: 1px dotted white;
+}
