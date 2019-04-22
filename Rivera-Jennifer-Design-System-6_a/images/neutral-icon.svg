@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="38px" viewBox="0 0 40 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>ic_new_releases_24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M40,20 L35.5636364,14.9454545 L36.1818182,8.25454545 L29.6181818,6.76363636 L26.1818182,0.981818182 L20,3.63636364 L13.8181818,0.981818182 L10.3818182,6.76363636 L3.81818182,8.23636364 L4.43636364,14.9272727 L0,20 L4.43636364,25.0545455 L3.81818182,31.7636364 L10.3818182,33.2545455 L13.8181818,39.0363636 L20,36.3636364 L26.1818182,39.0181818 L29.6181818,33.2363636 L36.1818182,31.7454545 L35.5636364,25.0545455 L40,20 Z M21.8181818,29.0909091 L18.1818182,29.0909091 L18.1818182,25.4545455 L21.8181818,25.4545455 L21.8181818,29.0909091 Z M21.8181818,21.8181818 L18.1818182,21.8181818 L18.1818182,10.9090909 L21.8181818,10.9090909 L21.8181818,21.8181818 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic/new_releases" transform="translate(-1.000000, -2.000000)">
+            <g id="ic_new_releases_24px" transform="translate(1.000000, 1.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Shape" fill-opacity="0.866012893" fill="#4A90E2" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

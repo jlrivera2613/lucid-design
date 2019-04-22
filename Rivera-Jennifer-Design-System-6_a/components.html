@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title>Components</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Work+Sans" rel="stylesheet">
+
+</head>
+
+	<body>
+		<header>
+			<div class="logo">Lucid Design</div>
+
+		    <nav class="home-nav">
+		        <ul>
+		            <li><a href="index.html">Home</a></li> 
+		            <li><a href="style.html">Style</a></li>
+		            <li><a href="components.html" class="current-page">Components</a></li>
+		            <li><a href="layout.html">Layout</a></li>
+		        </ul>
+		    </nav>
+				
+		</header>
+
+		<main>
+
+			<h1>Lucid Design Components</h1>
+
+			<section>
+
+				<h2>Button Links</h2>
+
+				<h3>Large</h3>
+					<figure class="button-margins">
+						<a href= "https://www.google.com/" class="hero-button-teal">button</a>
+						<a href= "https://www.google.com/" class="hero-button-orange">button</a>
+						<a href= "https://www.google.com/" class="hero-button-blue">button</a>
+					</figure>
+
+				<h3>Medium</h3>
+					<figure class="button-margins">
+						<a href= "https://www.google.com/" class="normal-button-teal">button</a>
+						<a href= "https://www.google.com/" class="normal-button-orange">button</a>
+						<a href= "https://www.google.com/" class="normal-button-blue">button</a>
+					</figure>
+
+				<h3>Small</h3>
+					<figure class="button-margins">
+						<a href= "https://www.google.com/" class="tertiary-button-teal">button</a>
+						<a href= "https://www.google.com/" class="tertiary-button-orange">button</a>
+						<a href= "https://www.google.com/" class="tertiary-button-blue">button</a>
+					</figure>
+
+			</section>
+
+			<section>
+
+				<h2>Accordions</h2>
+
+				<figure>
+					
+					<details>
+						<summary>
+							Section 1
+						</summary>
+
+						<div>
+							<p>Item 1</p>
+							<p>Item 2</p>
+							<p>Item 3</p>
+						</div>
+					</details>
+
+					<details>
+						<summary>
+							Section 2
+						</summary>
+
+						<div>
+							<p>Item 1</p>
+							<p>Item 2</p>
+							<p>Item 3</p>
+						</div>
+					</details>
+
+					<details>
+						<summary>
+							Section 3
+						</summary>
+
+						<div>
+							<p>Item 1</p>
+							<p>Item 2</p>
+							<p>Item 3</p>	
+						</div>
+					</details>
+
+				</figure>
+			</section>
+
+			<section>
+
+				<h2>Modal Dialog</h2>
+
+				<figure>
+					<dialog class="modal-dialog">
+						<h3 class="modal-title">Lucid Design Content</h3>
+						<p>Lorem ipsum dolor sit amet, usu in justo zril, vix esse labores an, eos ut audiam sapientem constituam. Sensibus euripidis definitiones sed te, ea duo tation ullamcorper, ne dicunt epicurei deterruisset per. Usu malis efficiantur delicatissimi id. Mei tota meliore quaerendum ea, est omnis aliquid definiebas in, mollis fastidii eu eum.Sit deleniti postulant cu. Vis dissentiet reformidans ex, his platonem expetendis consectetuer eu, ne tincidunt disputando mel. Utinam omnium at ius, quodsi causae no sit. Enim timeam per no, ipsum constituam ea per.</p>
+					</dialog>
+
+					<button id="open-modal" type="button">Open Modal</button>
+				</figure>
+
+			</section>
+
+			<section>
+				<h2>Form Inputs</h2>
+
+				<h3>Text Field</h3>
+
+				<figure>
+
+						<label for="text">Text</label>
+						<input type="text" id="text" name="text" placeholder="Input Text">
+						<p class="helper-text">Helper text should go below the form field and be in italics.</p>
+
+						<label for="disabled-text">Disabled Text</label>
+						<input type="text" id="disabled-text" name="disabled-text" placeholder="Text is disabled." disabled>
+
+						<label for="error-text">Error Text</label>
+						<input type="text" id="error-text" name="error-text" placeholder="Enter correct value." class="error">
+
+				</figure>
+
+				<h3>Textarea</h3>
+
+				<figure>
+
+						<label for="textarea">Textarea</label>
+						<textarea id="textarea" name="textarea" placeholder="Input Text"></textarea>
+
+						<label for="disabled-textarea">Disabled Textarea</label>
+						<textarea id="disabled-textarea" name="disabled-textarea" placeholder="Text is disabled" disabled></textarea>
+
+						<label for="error-textarea">Error Textarea</label>
+						<textarea id="comment" name="comment" placeholder="Input Text" class="error"></textarea>
+
+				</figure>
+
+				<h3>Select</h3>
+
+				<figure>
+
+					<label for="select">Select</label>
+					<select id="select" name="select">
+						<option value="" selected disabled hidden>Choose</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+
+					<label for="disabled-select">Disabled Select</label>
+					<select id="disabled-selection" name="disabled-select" disabled>
+						<option selected disabled hidden>Select One</option>
+						<option value="" selected disabled hidden>Choose</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+
+					<label for="error-select">Error Select</label>
+					<select id="error-select" name="error-select" class="error">
+						<option selected disabled hidden value="">Select One</option>
+						<option value="" selected disabled hidden>Choose</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+
+				</figure>
+
+				<h3>Submit/Button</h3>
+
+				<figure>
+
+					<input type="submit" value="Submit">
+
+				</figure>
+
+			</section>
+
+			<section>
+
+				<h2>Navigation</h2>
+
+				<h3>Primary Navigation</h3>
+
+				<figure>
+					<nav class="home-nav">
+						<ul>
+							<li><a href="">Home</a></li>
+							<li><a href="">Style</a></li>
+							<li><a href="" class="current-page">Components</a></li>
+							<li><a href="">Layout</a></li>
+						</ul>
+					</nav>
+				</figure>
+
+				<h3>Secondary Vertical Navigation</h3>
+
+				<figure>
+
+					<nav class="vertical-nav">
+						<ul>
+							<li><a href="">Home</a></li>
+							<li><a href="">Style</a></li>
+							<li><a href="" class="current-vertical">Components</a>
+								<ul>
+									<li><a href="">Sub-category</a></li>
+								</ul>
+							</li>
+							<li><a href="">Layout</a></li>
+						</ul>
+					</nav>
+
+				</figure>
+
+			</section>
+
+			<section>
+				
+				<h2>Notifications</h2>
+
+				<h3>Error</h3>
+
+				<figure>
+
+						<div class="error-notification">
+							<img src="images/error-icon.svg" class="error-icon">
+							<p class="error-text"><strong>Oops! Please only use valid entries</strong></p>
+						</div>
+					
+				</figure>
+
+				<h3>Warning</h3>
+
+				<figure>
+
+					<div class="warning-notification">
+						<img src="images/warning-icon.svg" class="warning-icon">
+						<p class="warning-text"><strong>Warning. You are close to your storage limit.</strong></p> 
+					</div>
+					
+				</figure>
+
+				<h3>Neutral</h3>
+
+				<figure>
+
+					<div class="neutral-notification">
+						<img src="images/neutral-icon.svg" class="neutral-icon">
+						<p class="neutral-text"><strong>Check out the newest Lucid Design feature.</strong></p> 
+					</div>
+					
+				</figure>
+
+				<h3>Success</h3>
+
+				<figure>
+
+					<div class="success-notification">
+						<img src="images/success-icon.svg" class="success-icon">
+						<p class="success-text"><strong>Success! Your account was successfully created.</strong></p>
+					</div>
+						
+				</figure>
+
+			</section>
+
+			<section>
+				
+				<h2>Hero Block</h2>
+
+				<figure>
+
+					<img src="images/hero-example.svg" class="hero-example">
+					
+				</figure>
+
+			</section>
+
+			<section>
+
+				<h2>Information Cards</h2>
+
+				<h3>Article/Post</h3>
+
+					<figure>
+
+						<div class="recipe-card">
+							
+							<img src="images/herbs.svg" class="herbs">
+
+							<div class="recipe-card-text">
+
+								<p class="herbs_text"><b>Start making your own herbs.</b></p>
+								<p class="herbs_sub">A comprehensive guide on starting your own herb garden.</p>
+	
+							</div>
+
+						</div>
+						
+					</figure>
+
+				<h3>Person/Profile</h3>
+
+					<figure>
+
+						<div class="profile-card">
+							
+							<img src="images/darth.svg" class="darth">
+
+								<p class="darth-text">Partial to the dark side of the Force. Identifies as a cyborg. Murderer of innocent children. Will probably break your heart.</p>
+
+						</div>
+						
+					</figure>
+
+				<h3>Call to Action</h3>
+
+					<figure>
+
+						<div class="action-card">
+							
+							<img src="images/volunteer.svg" class="volunteer">
+
+							<div class="action-card-text">
+								<p>“Volunteers do not necessarily have the time; they just have the heart.”</p>
+								<a href="" class="normal-button-orange">Sign Up to Volunteer</a>
+							</div>
+
+						</div>
+						
+					</figure>
+
+			</section>
+
+			<section>
+				
+				<h2>Card Grid</h2>
+
+					<figure>
+						
+
+
+					</figure>
+
+			</section>
+
+			<section>
+				
+				<h2>Card Callouts</h2>
+
+					<figure>
+						
+						
+					</figure>
+
+			</section>
+
+		</main>
+
+		<footer>
+
+			<p>Lucid Design was created by Jennifer Rivera.</p>
+
+			<p>Jennifer is a User Experience Design Student at Austin Community College. She has a background in Psychology and learned the value of person-centered thinking early on in her career in Social Work. She asks that you please design responsibly and remember you are not the user.</p>
+
+			<p>Let's Connect</p>
+
+			<nav class="footer-nav">
+				<ul>
+					<li><a href="https://www.linkedin.com/in/jennifer-rivera-637390163/">Email |</a></li>
+					<li><a href="http://www.google.com">LinkedIn |</a></li>
+					<li><a href="http://www.google.com">Twitter</a></li>
+				</ul>
+			</nav>
+
+			<p><strong>© Jennifer Rivera 2019</strong></p>
+
+		</footer>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function(){
+
+			const modal = document.querySelector('dialog');
+			const open = document.getElementById('open-modal');
+
+			open.addEventListener('click', () => {
+			modal.showModal();
+			});
+
+			modal.addEventListener('click', event => {
+			if (event.target === modal) {
+			modal.close('cancelled');
+			}
+			});
+
+			});
+		</script>
+
+
+	</body>
+</html>
+
+

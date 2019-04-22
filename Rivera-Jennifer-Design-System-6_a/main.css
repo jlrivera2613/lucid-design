@@ -1,0 +1,1083 @@
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+html {
+
+	/*Teal Colors*/
+	--color-teal-dark: #006064;
+	--color-teal-light: #14CBA8;
+	--color-teal-primary: #009688;
+
+	/*Orange Colors*/
+	--color-orange-dark: #D84315;
+	--color-orange-light: #FF8A50;
+	--color-orange-primary: #F44336;
+
+	/*Blue Colors*/
+	--color-blue-dark: #022F6C;
+	--color-blue-light: #4F83CC;
+	--color-blue-primary: #01579B;
+
+	/*Text Colors*/
+	--color-text-primary: #3C4858;
+	--color-text-light: #677385;
+	--color-text-dark: #14212F;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+html {
+	--font-primary: 'Work Sans', sans-serif;
+	--font-secondary: 'Montserrat', sans-serif;
+
+	/*Type Scale*/
+
+	--ratio: 1.05;
+	--bodytext: 1rem;
+
+	/*Large Text Sizes*/
+	--large-text: calc(var(--bodytext) * var(--ratio));
+	--xlarge-text: calc(var(--large-text) * var(--ratio));
+	--xxlarge-text: calc(var(--xlarge-text) * var(--ratio));
+	--xxxlarge-text: calc(var(--xxlarge-text) * var(--ratio));
+	--xxxxlarge-text: calc(var(--xxxlarge-text) * var(--ratio));
+	--xxxxxlarge-text: calc(var(--xxxxlarge-text) * var(--ratio));
+
+	/*Small Text Sizes*/
+	--small-text: calc(var(--bodytext) / var(--ratio));
+	--xsmall-text: calc(var(--small-text) / var(--ratio));
+    --xxsmall-text: calc(var(--xsmall-text) / var(--ratio));
+    --xxxsmall-text: calc(var(--xxsmall-text) / var(--ratio));
+    --xxxxsmall-text: calc(var(--xxxsmall-text) / var(--ratio));
+    --xxxxxsmall-text: calc(var(--xxxxsmall-text) / var(--ratio));
+
+    /*Margins*/
+    --margin-standard: 0 0 1rem;
+    --margin-2rem: 0 0 2rem;
+
+    /*Text Color, Font, & Size*/
+	color: var(--color-text-primary);
+	font-family: var(--font-primary);
+	font-size: var(--bodytext);
+	line-height: 1.5;
+}
+
+@media ( min-width: 650px ) {
+
+	html {
+
+		--ratio: 1.15; 
+	}
+
+	body {
+		margin: auto; 
+	}
+
+	.home-nav li {
+		padding-bottom: 1rem;
+	}
+}
+
+a {
+	color: var(--color-teal-primary);
+	text-decoration: underline;
+}
+
+a:visited {
+	color: var(--color-blue-primary);
+}
+
+a:hover {
+	color: var(--color-orange-light);
+	text-decoration: underline;
+}
+
+a:active {
+	color: var(--color-orange-primary);
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+a:focus {
+	border: solid .063rem var(--color-teal-dark);
+	color: var(--color-text-primary);
+}		
+
+blockquote {
+	border-left: 5px solid var(--color-blue-light);
+	display: block;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+	padding: .94px 2.5rem;
+}
+
+h1, h2, h3, h4, h5, h6,.logo {
+	font-family: var(--font-secondary);
+}
+
+h1, h2, h3, h4 {
+	margin-top: 1rem;
+}
+
+h1 {
+	font-size: var(--xxxxxlarge-text);
+}
+
+h2 {
+	font-size: var(--xxxxlarge-text);
+}
+
+h3 {
+	font-size: var(--xxxlarge-text);
+}
+
+h4 {
+	font-size: var(--xxlarge-text);
+}
+
+h5 {
+	font-size: var(--xlarge-text);
+}
+
+h6 {
+	font-size: var(--large-text);
+}
+
+.logo {
+	color: var(--color-orange-light);
+	font-size: 3.13rem;
+	font-weight: bold;
+}
+
+.lucid-styles {
+	font-size: 1.88rem;
+}
+
+p {
+	margin: var(--margin-standard); 
+}
+
+.primary-font {
+	font-family: var(--font-primary);
+}
+
+ol {
+	list-style-type: square;
+}
+
+ul {
+	list-style-type: square;
+}
+
+.featured-text {
+	font-size: var(--bodytext);
+	font-style: italic;
+}
+
+.tertiary-text {
+	font-size: var(--small-text);
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.hero {
+	align-items: center;
+	background-image: url(images/lucid-hero.svg);
+	background-color: navy;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: cente
+}
+
+.hero p {
+	var(--font-secondary);
+	font-size: var(--xxxlarge-text);
+	font-style: italic;
+	margin-bottom: 2rem;
+	max-width: 55vw;
+}
+
+.hero h1, .hero p {
+	color: white;
+}
+
+ .button-hero, .button-hero:visited {
+	background-color: transparent;
+	border-radius: .3rem;
+	border: solid .2rem;
+	color: white;
+	display: inline-block;
+	font-size: larger;
+	font-weight: bolder;
+	margin-right: 1.25rem;
+	margin-bottom: 2rem;
+	padding: 1rem 2.6rem;
+	text-decoration: none;
+}
+
+.button-hero:hover, .button-hero:focus {
+	background-color: var(--color-teal-light);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	margin-right: 1.25rem;
+	padding: 1rem 2.6rem;
+	text-decoration: none;
+	transition: linear .4s;
+}
+
+.button-hero:active {
+	border: 3px dotted white;
+}
+
+header, main {
+	padding: 2rem;
+}
+
+.home-nav li {
+	font-size: var(--xlarge-text);
+	list-style: none;
+	padding-right: .7rem;
+}
+
+.home-nav a {
+	padding-right: .5rem;
+	text-decoration: none; 
+}
+
+.vertical-nav li {
+	list-style: none;
+	font-size: var(--xlarge-text);
+	padding-bottom: .5rem;
+}
+
+.vertical-nav a {
+	text-decoration: none;
+}
+
+.current-page {
+	border-bottom: solid var(--color-teal-light);
+	border-bottom-width: .2rem;
+	padding-bottom: .1rem; 
+}
+
+.current-vertical {
+	background-color: lightblue;
+	display: block;
+}
+
+@media (min-width: 650px) {
+
+	.home-nav li {
+		display: inline-block;
+	}
+}
+
+/* ==========================================================================
+   Master Layout
+   ========================================================================== */
+main {
+	max-width: 25rem;
+}
+
+body {
+	margin: 0;
+}
+
+/*Margins*/
+
+.button-margins {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+} 
+
+@media (min-width: 650px) {
+	main {
+		margin: auto;
+		max-width: 30rem;
+	}
+}
+
+@media (min-width: 900px) {
+
+	main {
+		margin: auto;
+		max-width: 55rem;
+	}
+
+}
+/* ==========================================================================
+   Footer Component
+   ========================================================================== */
+
+footer {
+	background-color: var(--color-orange-light);
+	margin-top: 10rem;
+	padding: 2rem; 
+	text-align: center;	
+}
+
+.footer-nav li {
+	display: inline;
+	font-size: 1.25rem;
+	padding-right: .69rem;
+	text-decoration: none; 
+}
+
+.footer-nav li a {
+	color: var(--color-teal-dark);
+}
+
+footer nav a {
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: var(--color-teal-light);
+	text-decoration: none;
+}
+
+footer p {
+	color: var(--color-text-primary);
+}
+
+ /*==========================================================================
+   Notifications
+   ========================================================================== */
+
+  .error-notification {
+
+	border-radius: .5rem;
+	border: .2rem solid var(--color-teal-light);
+	box-shadow: .20rem .20rem .20rem var(--color-blue-primary);
+ 	flex-direction: column;
+ 	font-size: var(--large-text);
+ 	padding: 1rem 1rem;
+  	align-items: center;
+  	background-color: white;
+  	display: flex;
+  	display: row;	
+  	max-width: 60vh;
+  }
+
+ .error-text, .error-icon {
+	margin-top: 1rem;
+ }
+
+.success-notification {
+
+	border-radius: .5rem;
+	border: .2rem solid var(--color-teal-light);
+	box-shadow: .20rem .20rem .20rem var(--color-blue-primary);
+ 	flex-direction: column;
+ 	font-size: var(--large-text);
+ 	padding: 1rem 1rem;
+  	align-items: center;
+  	background-color: white;
+  	display: flex;
+  	display: row;	
+  	max-width: 60vh;
+}
+
+.success-text, .success-icon {
+	margin-top: 1rem;
+}
+
+.warning-notification {
+
+	border-radius: .5rem;
+	border: .2rem solid var(--color-teal-light);
+	box-shadow: .20rem .20rem .20rem var(--color-blue-primary);
+ 	flex-direction: column;
+ 	font-size: var(--large-text);
+ 	padding: 1rem 1rem;
+  	align-items: center;
+  	background-color: white;
+  	display: flex;
+  	display: row;	
+  	max-width: 60vh;
+}
+
+.warning-text, .warning-icon {
+	margin-top: 1rem;
+}
+
+.neutral-notification {
+
+	border-radius: .5rem;
+	border: .2rem solid var(--color-teal-light);
+	box-shadow: .20rem .20rem .20rem var(--color-blue-primary);
+ 	flex-direction: column;
+ 	font-size: var(--large-text);
+ 	padding: 1rem 1rem;
+  	align-items: center;
+  	background-color: white;
+  	display: flex;
+  	display: row;	
+  	max-width: 60vh;
+
+}
+
+.neutral-text, .neutral-icon {
+
+	margin-top: 1rem;
+}
+
+ /*==========================================================================
+   Examples
+   ========================================================================== */
+
+ /*Typography Examples*/
+
+.secondary-font {
+	font-family: var(--font-secondary)
+}
+
+.secondary-text {
+   	font-family: var(--font-secondary);
+   }
+
+.example-heading {
+   	border-bottom:.063rem solid lightgrey;
+   	margin: 0;
+   	padding-bottom: 1rem;
+   }
+
+
+/*Hero Teal Button*/
+
+.hero-button-teal, .hero-button-teal:visited {
+	background-color: transparent;
+	border-radius: .3rem;
+	border: solid .2rem;
+	color: var(--color-teal-light);
+	display: inline-block;
+	font-size: larger;
+	font-weight: bolder;
+	padding: 1rem 2.6rem;
+	text-decoration: none;
+}
+
+.hero-button-teal:hover, .hero-button-teal:focus {
+	background-color: var(--color-teal-light);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	padding: 1rem 2.6rem;
+	text-decoration: none;
+	transition: linear .4s;
+}
+
+.hero-button-teal:active {
+	border: 3px dotted white;
+}
+
+/*Hero Orange Button*/
+
+.hero-button-orange, .hero-button-orange:visited {
+	background-color: transparent;
+	border-radius: .3rem;
+	border: solid .2rem;
+	color: var(--color-orange-primary);
+	display: inline-block;
+	font-weight: normal;
+	font-size: larger;
+	padding: 1rem 2.6rem;
+	text-decoration: none;
+}
+
+.hero-button-orange:hover, .hero-button-orange:focus {
+	background-color: var(--color-orange-primary);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	padding: 1rem 2.6rem;
+	text-decoration: none;
+	transition: linear .4s;
+}
+
+.hero-button-orange:active {
+	border: 3px dotted white;
+}
+
+/*Hero Blue Button*/
+.hero-button-blue, .hero-button-blue:visited {
+	background-color: transparent;
+	border-radius: .3rem;
+	border: solid .2rem;
+	color: var(--color-blue-primary);
+	display: inline-block;
+	font-weight: normal;
+	font-size: larger;
+	padding: 1rem 2.6rem;
+	text-decoration: none;
+}
+
+.hero-button-blue:hover, .hero-button-blue:focus {
+	background-color: var(--color-blue-primary);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	padding: 1rem 2.6rem;
+	text-decoration: none;
+	transition: linear .4s;
+}
+
+.hero-button-blue:active {
+	border: 3px dotted white;
+}
+
+
+/*Normal Teal Button*/
+
+.normal-button-teal, .normal-button-teal:visited {
+	background-color: var(--color-teal-primary);
+	border-radius: .5rem;
+	border: solid .2rem;
+	color: white;
+	display: inline-block;
+	font-weight: normal;
+	padding: .8rem 2rem;
+	text-decoration: none;
+}
+
+.normal-button-teal:hover, .normal-button-teal:focus {
+	background-color: var(--color-teal-light);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	padding: .8rem 2rem;
+	text-decoration: none;
+}
+
+
+.normal-button-teal:active {
+	border: 3px dotted white;
+}
+
+/*Normal Orange Button*/
+
+.normal-button-orange, .normal-button-orange:visited {
+	background-color: var(--color-orange-primary);
+	border-radius: .5rem;
+	border: solid .2rem;
+	color: white;
+	display: inline-block;	
+	font-weight: normal;
+	padding: .8rem 2rem;
+	text-decoration: none;
+}
+
+.normal-button-orange:hover, .normal-button-orange:focus {
+	background-color: var(--color-orange-light);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	padding: .8rem 2rem;
+	text-decoration: none;
+}
+
+.normal-button-orange:active {
+	border: 3px dotted white;
+}
+
+/*Normal Blue Button*/
+.normal-button-blue, .normal-button-blue:visited {
+	background-color: var(--color-blue-primary);
+	border-radius: .5rem;
+	border: solid .2rem;
+	color: white;
+	display: inline-block;
+	font-weight: normal;
+	padding: .8rem 2rem;
+	text-decoration: none;
+}
+
+.normal-button-blue:hover, .normal-button-blue:focus {
+	background-color: var(--color-blue-light);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	padding: .8rem 2rem;
+	text-decoration: none;
+}
+
+.normal-button-blue:active {
+	border: 3px dotted white;
+}
+
+/*Small Teal Button*/
+
+.tertiary-button-teal, .tertiary-button-teal:visited {
+	background-color: var(--color-teal-dark);
+	border-radius: .5rem;
+	border: solid .2rem;
+	color: white;
+	display: inline-block;
+	font-weight: normal;
+	padding: .5rem 1.5rem;
+	text-decoration: none;
+}
+
+.tertiary-button-teal:hover, .tertiary-button-teal:focus {
+	background-color: var(--color-teal-primary);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	padding: .5rem 1.5rem;
+	text-decoration: none;
+}
+
+
+.tertiary-button-teal:active {
+	border: 3px dotted white;
+}
+
+/*Small Orange Button*/
+
+.tertiary-button-orange, .tertiary-button-orange:visited {
+	background-color: var(--color-orange-dark);
+	border-radius: .5rem;
+	border: solid .2rem;
+	color: white;
+	display: inline-block;
+	font-weight: normal;
+	padding: .5rem 1.5rem;
+	text-decoration: none;
+}
+
+.tertiary-button-orange:hover, .tertiary-button-orange:focus {
+	background-color: var(--color-orange-primary);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	padding: .5rem 1.5rem;
+	text-decoration: none;
+}
+
+.tertiary-button-orange:active {
+	border: 3px dotted white;
+}
+
+/*Small Blue Button*/
+.tertiary-button-blue, .tertiary-button-blue:visited {
+	background-color: var(--color-blue-dark);
+	border-radius: .5rem;
+	color: white;
+	display: inline-block;
+	font-weight: normal;
+	padding: .5rem 1.5rem;
+	text-decoration: none;
+}
+
+.tertiary-button-blue:hover, .tertiary-button-blue:focus {
+	background-color: var(--color-blue-light);
+	border-radius: .5rem; 
+	color: white;
+	font-weight: bold;
+	padding: .5rem 1.5rem;
+	text-decoration: none;
+}
+
+.tertiary-button-blue:active {
+	border: 3px dotted white;
+}
+
+/*==========================================================================
+  	Accordian
+  ========================================================================== */
+
+details {
+	background-color: white;
+	border: 1px solid darkgrey;
+	border-radius: .3rem;
+	max-width: 50rem;
+}
+
+details div {
+	background-color: white;
+	padding: 1.5rem;
+}
+
+summary:focus, details[open] summary {
+	background-color: var(--color-orange-light);
+	outline: none;
+}
+
+summary {
+	background-color: white;
+	padding: 1.5rem;
+}
+
+summary:visited {
+	background-color: var(--color-orange-light);
+}
+
+summary:hover {
+	color: white;
+	background-color: var(--color-teal-light);
+	font-weight: bold;	
+}
+
+summary:active {
+	box-shadow: 1rem 1rem;
+}
+
+/*Modal Dialog*/
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+dialog {
+	border-color: var(--color-teal-light);
+	border-width: .4rem;
+	border-radius: .5rem;
+	box-shadow: .25rem .25rem .25rem var(--color-blue-primary);
+}
+
+dialog::backdrop {
+	background-color: rgba( 192, 192, 192, .5 );
+}
+
+dialog[open] {
+	animation: fade-in 1.5s ease;
+}
+
+.modal-dialog {
+	max-width: 30%;
+	height: auto;
+}
+
+.modal-title {
+	text-align: center;
+}
+
+
+/*==========================================================================
+   Form
+   ========================================================================== */	
+
+input, textarea, select {
+	display: block;
+	font-size: var(--bodytext);
+	margin-bottom: 1rem;
+	min-width: 15rem;
+}
+
+textarea {
+	min-height: 10rem;
+	min-width: 26rem;
+}
+
+input[type="text"], textarea, select {
+	border-radius: .25rem;
+	border: 2px solid var(--color-orange-light);
+	padding: 1rem;
+}
+
+input:focus, textarea:focus, select:focus {
+	background-color: rgba(20, 203, 168, .3);
+	outline: double var(--color-orange-dark);
+}
+
+input[disabled], textarea[disabled], select[disabled] {
+	background-color: lightgrey;
+	color: var(--color-text-primary);
+}
+
+.error {
+	border: 3px solid red;
+}
+
+.helper-text {
+	color: var(--color-text-light);
+	font-style: italic;
+	margin-top: 1rem;
+}
+
+button, input[type=submit] {
+	background-color: var(--color-orange-light);
+	border: none;
+	border-radius: .25rem;
+	color: white;
+	cursor: pointer;
+	font-family: var(--font-primary);
+	font-size: var(--bodytext);
+	padding:.5rem 1rem;
+}
+
+input[type=submit]:hover, input[type=submit]:focus, button:hover, button:focus {
+	background-color: var(--color-teal-light);
+	color: white;
+}
+
+input[type=submit]:active, button:active {
+	border: 1px dotted white;
+}
+
+.hero-example {
+	margin-top: 2rem;
+	max-width: 70vw;
+}
+
+/* ==========================================================================
+   Cards
+   ========================================================================== */
+
+.recipe-card {
+	align-items: center;
+	border: 3px solid grey;
+	border-radius: .5rem;
+	display: flex;
+	max-width: 48vw;
+}
+
+.recipe-card p {
+	font-size: var(--large-text);
+	text-align: center;
+}
+
+.recipe-card-text {
+	margin: auto;
+}
+
+.herbs {
+	border-radius: .3rem;
+}
+
+.herbs-text {
+	font-size: var(--large-text);
+}
+
+.profile-card {
+	align-items: center;
+	display: flex;
+	border: 3px solid grey; 
+	border-radius: .5rem;
+	max-width: 50vw;
+}
+
+.profile-card p {
+	max-width: 50vw;
+	font-size: var(--large-text);
+	text-align: center;
+}
+
+.darth {
+	margin: 2rem 2rem;
+
+}
+
+.darth-text {
+	margin: 2rem 2rem;
+}
+
+.action-card {
+	border: solid 3px grey;
+	border-radius: .5rem;
+	display: flex;
+}
+
+.action-card-text {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+.action-card p {
+	font-size: var(--large-text);
+	max-width: 70%;
+	font-style: italic;
+	text-align: center;
+}
+
+.volunteer {
+	margin: 2rem 2rem;
+	max-width: 10vw;
+}
+
+
+.action-card .normal-button-orange {
+	margin-top: 2rem;
+}
+
+/* ==========================================================================
+   Call Outs
+   ========================================================================== */
+
+.callout-1, .callout-2, .callout-3 {
+	align-items: center;
+	background-color: #E0E0E0;
+	border-color: var(--color-blue-dark);
+	border-radius: .3rem;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+	max-width: 75%;
+	padding: 1.5rem;
+}
+
+.callout-1 p, .callout-2 p, .callout-3 p {
+	font-size: var(--large-text);
+	font-weight: bold;
+	text-align: center;
+}
+
+.callout-1 a, .callout-2 a, .callout-3 a {
+	justify-content: center;
+}
+
+.music-icon, .events-icon {
+	height: 4vh;
+	padding-bottom: 1rem;
+	width: 4vw;
+
+}
+
+.partners-icon {
+	height: 5vh;
+	padding-bottom: 1rem;
+	width: 5vw;
+}
+
+.callout-grid {
+	display: grid;
+	grid-column-gap: 1rem;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.example-callout {
+	width: 55rem; 
+}
+
+@media (max-width: 950px) {
+
+	.callout-grid {
+		display: grid;
+		grid-column-gap: 1rem;
+		grid-template-columns: 1fr;
+		max-width: 15rem;
+	}
+
+	.music-icon, .events-icon {
+/*		height: 4vh;*/
+		padding-bottom: 1rem;
+/*		width: 4vw;*/
+
+}
+
+	.partners-icon {
+/*		height: 5vh;*/
+		padding-bottom: 1rem;
+/*		width: 5vw;*/
+	}
+
+	.example-callout {
+		width: 45rem; 
+	}
+}
+
+@media (max-width: 700px) {
+
+	.callout-grid {
+		display: grid;
+		grid-column-gap: 1rem;
+		grid-template-columns: 1fr;
+		max-width: 18rem;
+	}
+
+	.music-icon, .events-icon {
+		height: 6vh;
+		width: 6vw;
+
+}
+
+	.partners-icon {
+		height: 7vh;
+		width: 7vw;
+	}
+
+	.example-callout {
+		width: 30rem; 
+	}
+}
+
+
+
+/* ==========================================================================
+   Card Grid
+   ========================================================================== */
+
+   .card-grid {   
+   		display: grid;
+   		font-size: var(--small-text);
+   		grid-gap: 1rem;	
+   		grid-template-columns: 1fr 1fr 1fr 1fr;
+   		justify-content: center;
+   }
+
+
+   .card-product {
+		background-color: #E0E0E0; 
+		max-height: 45rem;	
+		padding: 1rem; 
+   }
+
+   .card-grid a {
+   		text-decoration: none;
+   }
+
+   @media (max-width: 1200px) {
+
+   		.card-grid {
+	   		display: grid;
+	   		font-size: var(--small-text);
+	   		grid-gap: 1rem;
+	   		grid-template-columns: 6fr 6fr;
+	   		text-align: center;
+   			justify-content: center;
+   		}
+
+   		.card-product {
+			background-color: #E0E0E0; 
+			max-height: 45rem;	
+			padding: 2rem; 
+   		}
+   }
+
+   @media (max-width: 950px) {
+
+	.card-grid {
+		display: grid;
+		font-size: var(--small-text);
+		grid-gap: 1rem;
+		grid-template-columns: 12fr;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.card-product {
+		background-color: #E0E0E0; 
+		max-height: 45rem;
+		max-width: 40rem;
+		padding: 2rem; 
+		}
+   }
+
+
